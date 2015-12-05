@@ -19,3 +19,11 @@ github_username:  haoxilu
 
 # Build settings
 markdown: kramdown
+
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Outputting
+permalink:     pretty
+paginate_path: /page:num
+timezone:      null
