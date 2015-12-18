@@ -15,7 +15,7 @@ categories: p
   ![二次元风格](http://static.haoxilu.net/@/post/2015-12-18-tencent-public-good-404/k-on-glico-moeblob-marketing-404-error-003.jpg)
 - 简单粗暴性的云梯
  ![云梯](http://static.haoxilu.net/@/post/2015-12-18-tencent-public-good-404/vpncloud-404.png)
-- 哪些有名的网站，但未处理404页面，保留语言特性的网站
+- 那些有名的网站，但未处理404页面，保留语言特性的网站
   ![某浪](http://static.haoxilu.net/@/post/2015-12-18-tencent-public-good-404/404.png)
   ![](http://static.haoxilu.net/@/post/2015-12-18-tencent-public-good-404/net-error-404.png)
   
