@@ -6,7 +6,7 @@ categories: jexus
 ---
 * * *
 
-作者：[郝喜路](http://weibo.com/haoxilu)&nbsp;&nbsp; 个人主页：[ http://www.cnicode.com ](http://www.cnicode.com/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 博客地址：[http://haoxilu.cnblogs.com](http://haoxilu.cnblogs.com/)&nbsp;&nbsp;&nbsp;
+作者：[郝喜路](http://weibo.com/haoxilu)&nbsp;&nbsp; 个人主页：[ http://haoxilu.net ](http://haoxilu.net/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 博客地址：[http://haoxilu.net](http://haoxilu.net)&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -62,7 +62,7 @@ sudo apt-get install automake autoconf
 
 5、 安装libgdiplus和mono所依赖的库文件
 
-sudo apt-get install bison libglib2.0-dev 
+sudo apt-get install bison libglib2.0-dev
 sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev
 
 6、 安装libgdiplus
@@ -91,7 +91,7 @@ ln -s /usr/include/freetype2 /usr/include/freetype
 
 或者在构建编译环境的时候执行
 
-sudo apt-get install libgif-dev 
+sudo apt-get install libgif-dev
 
 sudo apt-get install libpng12-dev
 
@@ -220,7 +220,7 @@ sudo ./upgrade
 
 2&gt;&nbsp; 编辑Jexus配置文件
 
-sudo vi /usr/jexus/siteconf/default&nbsp; 
+sudo vi /usr/jexus/siteconf/default&nbsp;
 
 将配置文件中/var/www/default 改为/var/www/cnicode
 
@@ -244,4 +244,4 @@ cp -Rf /home/icode/software/jexusmono/* /var/www/cnicode
 
 下载地址：链接: http://pan.baidu.com/s/1sjtwX9F 密码: 9iji
 
-郝喜路 记录于 2014年6月28日 
+郝喜路 记录于 2014年6月28日
