@@ -11,7 +11,8 @@ email: mail@haoxilu.net
 description: > # this means to ignore newlines until "baseurl:"
   “爱编程，更爱生活。”是我现在的口号，之前的口号是“ILife，ICode！！爱生活，爱编程！！”，不同之处是现在把生活放到了重要的位置。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.haoxilu.net" # the base hostname & protocol for your site
+url: "https://haoxilu.net" # the base hostname & protocol for your site
+enforce_ssl:"haoxilu.net"
 twitter_username: haoxilu
 github_username:  haoxilu
 
