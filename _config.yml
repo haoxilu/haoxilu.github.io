@@ -1,7 +1,7 @@
 # Site settings
 title: Richard Hao
 SEOTitle: 郝喜路|Richard Hao
-header-img: http://static.haoxilu.net/home-bg.jpg
+header-img: //static.haoxilu.net/home-bg.jpg
 email: mail@haoxilu.net
 description: "爱生活，更爱编程！"
 keyword: "郝喜路,Richard Hao,haoxilu"
@@ -42,7 +42,7 @@ kramdown:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "爱生活，更爱编程！软件开发工程师"
-sidebar-avatar: http://static.haoxilu.net/richard.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: //static.haoxilu.net/richard.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

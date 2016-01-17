@@ -3,7 +3,7 @@ layout: post
 title:  "ubuntu-14.04-server配置Jexus –安装步骤记录"
 date:   2014-06-28 11:38:59
 author: "Richard Hao"
-header-img: "http://static.haoxilu.net/post-bg.jpg"
+header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - jexus
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "腾讯公益404——程序员也可以做公益"
 date:   2015-12-18 11:38:59
 author:     "Richard Hao"
-header-img: "http://static.haoxilu.net/post-bg.jpg"
+header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 文章
 ---
