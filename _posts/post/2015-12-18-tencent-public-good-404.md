@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "腾讯公益404——程序员也可以做公益"
-date:   2015-12-18 11:38:59 +0800
-categories: p 
+date:   2015-12-18 11:38:59
+author:     "Richard Hao"
+header-img: "http://static.haoxilu.net/post-bg.jpg"
+tags:
+    - 文章
 ---
   当我们在互联网冲浪的时候，都会遇到形形色色的404页面。不同网站的404页面都有自己各自不同的特色。在说腾讯的公益404之前，让我们先看不同网站的奇异的404页面。
 
