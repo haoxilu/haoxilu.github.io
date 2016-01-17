@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="//static.haoxilu.net/website-qrcode.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
@@ -17,7 +17,7 @@ layout: default
         width: 100%;
         height: 100%;
         border: 0;
-    }
+
 </style>
 <header class="intro-header" >
     <iframe src="{{page.iframe}}"/>
@@ -87,28 +87,30 @@ layout: default
                     {% endif %}
                 </ul>
 
-
-                {% if site.duoshuo_username %}
-                <!-- 多说评论框 start -->
                 <div class="comment">
-                    <div class="ds-thread"
-                        data-thread-key="{{page.id}}"
-                        data-title="{{page.title}}"
-                        data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
-                    </div>
-                </div>
-                <!-- 多说评论框 end -->
-                {% endif %}
+                  <div id="disqus_thread"></div>
+                <script>
+                  /**
+                  * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                  */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
 
-                {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread">
+                  s.src = '//haoxilu123.disqus.com/embed.js';
 
-                    </div>
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                 </div>
-                <!-- disqus 评论框 end -->
-                {% endif %}
 
             </div>
 
@@ -172,21 +174,6 @@ layout: default
     resize();
 </script>
 
-<script>
-/**
- * discuss start
- **/
- (function() { // DON'T EDIT BELOW THIS LINE
- var d = document, s = d.createElement('script');
-
- s.src = '//haoxilu123.disqus.com/embed.js';
-
- s.setAttribute('data-timestamp', +new Date());
- (d.head || d.body).appendChild(s);
- })();
- </script>
- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
 {% if site.anchorjs %}
 <!-- async load function -->
 <script>
@@ -201,7 +188,7 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+    async("//cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
           visible: 'always',
           placement: 'right',
