@@ -33,9 +33,9 @@ ga_domain: haoxilu.net
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+# markdown: kramdown
+# kramdown:
+#  input: GFM                            # use Github Flavored Markdown !important
 
 
 
@@ -50,7 +50,7 @@ sidebar-avatar: //static.haoxilu.net/richard.jpg      # use absolute URL, seeing
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
-
+enforce_ssl: "haoxilu.net"
 
 # Friends
 friends: [
