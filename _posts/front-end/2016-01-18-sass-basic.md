@@ -51,7 +51,7 @@ tags:
 ## 语法
 - 展现方式，有sass和scss两种。其不同点在下面代码中可以非常清晰的看到。
 	
-	1. sass样式:
+	 sass样式:
 	
 		```sass
 		$font-stack:    Helvetica, sans-serif
@@ -62,7 +62,7 @@ tags:
 	 	 	color: $primary-color
 		```
 		
-	2. scss样式：
+	 scss样式：
 
 		```scss
 		$font-stack:    Helvetica, sans-serif;
