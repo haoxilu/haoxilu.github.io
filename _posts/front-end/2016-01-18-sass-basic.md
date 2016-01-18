@@ -53,7 +53,7 @@ tags:
 	
 	1. sass样式:
 	
-		```css
+		```sass
 		$font-stack:    Helvetica, sans-serif
 		$primary-color: #333
 	
@@ -64,7 +64,7 @@ tags:
 		
 	2. scss样式：
 
-		```css
+		```scss
 		$font-stack:    Helvetica, sans-serif;
 		$primary-color: #333;
 	
@@ -89,7 +89,7 @@ tags:
 	
 	下面查看完整例子：
 	
-	``` css
+	``` scss
 	$font-stack:    Helvetica, sans-serif;
 	$primary-color: #333;
 	
@@ -111,7 +111,7 @@ tags:
 	
 	变量调用还有另外一种方式：
 	
-	```css
+	```scss
 	$left: left;
 	
 	body{
@@ -127,7 +127,7 @@ tags:
 	
 	1. 标签嵌套，Sass代码如下：
 	
-	```css
+	```scss
 	nav {
 	  ul {
 	    margin: 0;
@@ -168,12 +168,12 @@ tags:
 	
 	 Sass代码(切记不要讲属性color后面的`:`漏掉)：
 	
-	```css
+	```scss
 　　p {
 　　　border: {
 　　　　　color: red;
 　　　}
-　　}``
+　　}
 	```
 	预处理后css代码：
 	
@@ -186,7 +186,7 @@ tags:
 	
 		Sass代码：
 	
-	```css
+	```scss
 	a {
 　　　	&:hover { color: blue; }
 	}
@@ -210,7 +210,7 @@ tags:
 	
 	局部Sass文件：
 	
-	```css
+	```scss
 	// _reset.scss
 
 	html,
@@ -224,7 +224,7 @@ tags:
 	
 	导入局部文件：
 	
-	```css
+	```scss
 	// base.scss
 
 	@import 'reset';
@@ -253,14 +253,14 @@ tags:
 	
 	Mixins定义方式：
 	
-	```css
+	```scss
 	@mixin Mixins名称（参数:参数值）{
     /*公用样式*/
 	}
 	```
 	定义成为模块后，需要通过`@include`进行调用mixin，调用代码如下：
 	
-	```css
+	```scss
 	selector {
    		@includ Mixins名称(参数值);
 	}
@@ -270,7 +270,7 @@ tags:
 	
 	Sass 文件:
 	
-	```css
+	```scss
 	@mixin border-radius($radius) {
 	  -webkit-border-radius: $radius;
 	     -moz-border-radius: $radius;
@@ -299,7 +299,7 @@ tags:
 	
 	Sass代码：
 	
-	```css
+	```scss
 	.message {
 	  border: 1px solid #ccc;
 	  padding: 10px;
@@ -352,7 +352,7 @@ tags:
 	
 	Sass代码
 	
-	```css
+	```scss
 	.container { width: 100%; }
 	
 	
@@ -411,7 +411,7 @@ tags:
 		
 	1. if方式，关键字：`@if`
 
-		```css
+		```scss
 		@if true {
 			/* 样式 */
 		}
@@ -419,7 +419,7 @@ tags:
 	
 	2. if-else,关键字：`@if @else`
 	
-		```css
+		```scss
 		@if true {
 			/* 样式 */
 		} @esle{
@@ -431,7 +431,7 @@ tags:
 	
 	SASS支持for循环：
 
-	```css
+	```scss
 　　@for $i from 1 to 10 {
 　　　　.border-#{$i} {
 　　　　　　border: #{$i}px solid blue;
@@ -441,7 +441,7 @@ tags:
 	　　
 	也支持while循环：
 
-	```css
+	```scss
 		$i: 6;
 	　　@while $i > 0 {
 	　　　　.item-#{$i} { width: 2em * $i; }
@@ -450,7 +450,7 @@ tags:
 	```
 	each命令，作用与for类似：
 
-	```css
+	```scss
 	@each $member in a, b, c, d {
 　　　　.#{$member} {
 　　　　　　background-image: url("/image/#{$member}.jpg");
@@ -461,7 +461,7 @@ tags:
 
 	Sass支持自定义函数。函数的定义和调用如下所示：
 	
-	```css
+	```scss
 　　@function double($n) {
 　　　　@return $n * 2;
 　　}
