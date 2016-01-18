@@ -53,26 +53,26 @@ tags:
 	
 	 sass样式:
 	
-		```sass
-		$font-stack:    Helvetica, sans-serif
-		$primary-color: #333
+	```sass
+	$font-stack:    Helvetica, sans-serif
+	$primary-color: #333
 	
-		body
-	  		font: 100% $font-stack
-	 	 	color: $primary-color
-		```
+	body
+  		font: 100% $font-stack
+ 	 	color: $primary-color
+	```
 		
 	 scss样式：
 
-		```scss
-		$font-stack:    Helvetica, sans-serif;
-		$primary-color: #333;
+	```scss
+	$font-stack:    Helvetica, sans-serif;
+	$primary-color: #333;
 	
-		body {
-		  font: 100% $font-stack;
-		  color: $primary-color;
-		}
-		```
+	body {
+	  font: 100% $font-stack;
+	  color: $primary-color;
+	}
+	```
 		
 	sass的样式是Sass刚刚问世的时候的样式，后来随着发展增加了scss的样式，目前两种样式Scss都是支持的。sass没有花括号，与原生的css样式相差较大，scss基本上是和css的代码样式是一样的，更符合之前写css代码习惯。我个人建议使用第二种scss的方式。
 
@@ -125,7 +125,7 @@ tags:
 	
 	Sass 支持标签属性等嵌套。
 	
-	1. 标签嵌套，Sass代码如下：
+	标签嵌套，Sass代码如下：
 	
 	```scss
 	nav {
@@ -164,7 +164,7 @@ tags:
 	}
 	```
 	
-	2. 属性嵌套
+	 属性嵌套
 	
 	 Sass代码(切记不要讲属性color后面的`:`漏掉)：
 	
@@ -182,7 +182,7 @@ tags:
 		border-color: red;
 	}
 	```
-	3. 引用父类元素。使用符号`&`
+	引用父类元素。使用符号`&`
 	
 		Sass代码：
 	
@@ -409,23 +409,23 @@ tags:
 	
 	定义方式：
 		
-	1. if方式，关键字：`@if`
+	 if方式，关键字：`@if`
 
-		```scss
-		@if true {
-			/* 样式 */
-		}
-		```
+	```scss
+	@if true {
+		/* 样式 */
+	}
+	```
 	
-	2. if-else,关键字：`@if @else`
+	if-else,关键字：`@if @else`
 	
-		```scss
-		@if true {
-			/* 样式 */
-		} @esle{
-			/* 样式 */
-		}
-		```
+	```scss
+	@if true {
+		/* 样式 */
+	} @esle{
+		/* 样式 */
+	}
+	```
 	
 - 循环语句
 	
