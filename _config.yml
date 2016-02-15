@@ -19,7 +19,7 @@ facebook_username: haoxilu
 
 
 
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -36,7 +36,6 @@ ga_domain: haoxilu.net
 # markdown: kramdown
 # kramdown:
 #  input: GFM                            # use Github Flavored Markdown !important
-highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions:
