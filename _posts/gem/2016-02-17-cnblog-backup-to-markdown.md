@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "gem ‘cnblog_back_up_to_markdown’使用说明"
+title:  "将博客园的备份文章转换为markdown格式"
 date:   2016-02-17 21:48:59
 author:     "Richard Hao"
 header-img: "//static.haoxilu.net/post-bg.jpg"
