@@ -1,68 +1,42 @@
 # Site settings
-title: Richard Hao
-SEOTitle: 郝喜路|Richard Hao
-header-img: //static.haoxilu.net/home-bg.jpg
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Richard Hao
+user_description: Ruby engineer
+user_title: 爱生活，更爱编程！
 email: mail@haoxilu.net
-description: "爱生活，更爱编程！"
-keyword: "郝喜路,Richard Hao,haoxilu"
-url: "https://haoxilu.net"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
-
-
-# SNS settings
-RSS: true
-weibo_username:    haoxilu
-github_username:   haoxilu
 twitter_username: haoxilu
-facebook_username: haoxilu
+github_username:  haoxilu
+gplus_username:  haoxilu
+disqus_username: haoxilu
 
-
-
+# Build settings
+markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-# Google Analytics
-ga_track_id: 'UA-70611530-1'            # Format: UA-xxxxxx-xx
-ga_domain: haoxilu.net
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-# markdown: kramdown
-# kramdown:
-#  input: GFM                            # use Github Flavored Markdown !important
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - strikethrough
-    - autolink
-    - tables
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "爱生活，更爱编程！软件开发工程师"
-sidebar-avatar: //static.haoxilu.net/richard.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
 
-enforce_ssl: "haoxilu.net"
-
-# Friends
-friends: [
-    {
-        title: "郝喜路-博客园",
-        href: "http://haoxilu.cnblogs.com/"
-    }]
-
-# Gems
-gems: [jekyll-paginate]
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
