@@ -9,6 +9,12 @@ user_description: Ruby Engineer
 user_title: 爱生活，更爱编程！
 email: mail@haoxilu.net
 
+# 备案号
+casenumber: 京ICP备15036713号
+
+# Google Analytics
+ga_track_id: 'UA-70611530-1'            # Format: UA-xxxxxx-xx
+ga_domain: haoxilu.net
 
 gplus_username:    haoxilu
 disqus_username:   haoxilu
