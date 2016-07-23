@@ -4,7 +4,7 @@ title: "Rails 中`redirect_to articles_path` 和 `redirect_to articles_path, sta
 date: 2016-07-01 11:38:59
 image: '//static.haoxilu.net/post-bg.jpg'
 description: 'Rails 中`redirect_to articles_path` 和 `redirect_to articles_path, status: 302`其实是没有区别的'
-main-class: 'css'
+main-class: 'ruby'
 color: '#2DA0C3'
 tags:
 - ruby
@@ -28,30 +28,32 @@ redirect_to articles_path, status: 302
 下面允许我贴关键方法的代码：
 
 ```ruby
-def redirect_to(options = {}, response_status = {})
-      raise ActionControllerError.new("Cannot redirect to nil!") unless options
-      raise ActionControllerError.new("Cannot redirect to a parameter hash!") if options.is_a?(ActionController::Parameters)
-      raise AbstractController::DoubleRenderError if response_body
 
-# 关键点一： self.status , 进入`_extract_redirect_to_status`方法查看详细实现
-      self.status        = _extract_redirect_to_status(options, response_status)
-      self.location      = _compute_redirect_to_location(request, options)
-      self.response_body = "<html><body>You are being <a href=\"#{ERB::Util.unwrapped_html_escape(location)}\">redirected</a>.</body></html>"
-    end
+def redirect_to(options = {}, response_status = {})
+  raise ActionControllerError.new("Cannot redirect to nil!") unless options
+  raise ActionControllerError.new("Cannot redirect to a parameter hash!") if options.is_a?(ActionController::Parameters)
+  raise AbstractController::DoubleRenderError if response_body
+	# 关键点一： self.status , 进入`_extract_redirect_to_status`方法查看详细实现
+  self.status        = _extract_redirect_to_status(options, response_status)
+  self.location      = _compute_redirect_to_location(request, options)
+  self.response_body = "<html><body>You are being <a href=\"#{ERB::Util.unwrapped_html_escape(location)}\">redirected</a>.</body></html>"
+end
+
 ```
 
 ```ruby
+
 def _extract_redirect_to_status(options, response_status)
-    # 关键点二：判断是否存在`status` 的key
-        if options.is_a?(Hash) && options.key?(:status)
-          Rack::Utils.status_code(options.delete(:status))
-        elsif response_status.key?(:status)
-          Rack::Utils.status_code(response_status[:status])
-        else
-          302 # 如果未定义response_status 默认为302
-        end
-      end
-    
+  # 关键点二：判断是否存在`status` 的key
+  if options.is_a?(Hash) && options.key?(:status)
+    Rack::Utils.status_code(options.delete(:status))
+  elsif response_status.key?(:status)
+    Rack::Utils.status_code(response_status[:status])
+  else
+    302 # 如果未定义response_status 默认为302
+  end
+end
+
 ```
 
 看完上面的两个方法已经把结论说的非常清楚了，最后稍微总结一下。

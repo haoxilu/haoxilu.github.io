@@ -5,13 +5,17 @@ url: "http://127.0.0.1:3000" # the base hostname & protocol for your site e.g. h
 
 # User settings
 username: Richard Hao
-user_description: Ruby engineer
+user_description: Ruby Engineer
 user_title: 爱生活，更爱编程！
 email: mail@haoxilu.net
-twitter_username: haoxilu
-github_username:  haoxilu
-gplus_username:  haoxilu
-disqus_username: haoxilu
+
+
+gplus_username:    haoxilu
+disqus_username:   haoxilu
+weibo_username:    haoxilu
+github_username:   haoxilu
+twitter_username:  haoxilu
+facebook_username: haoxilu
 
 # Build settings
 markdown: kramdown
