@@ -6,6 +6,10 @@ author:     "郝喜路"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
+description: ''
+main-class: 'dev'
+color: '#2DA0C3'
+introduction: ''
 ---
 [Jquery Validate使用总结一](http://www.cnblogs.com/haoxilu/p/3559184.html)
 

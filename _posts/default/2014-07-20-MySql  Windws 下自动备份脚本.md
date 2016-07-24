@@ -6,6 +6,10 @@ author:     "郝喜路"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
+description: ''
+main-class: 'dev'
+color: '#2DA0C3'
+introduction: ''
 ---
 　　这几天正在做一个 &nbsp;使用MySQL数据库的项目，目前项目已经完成了，当部署好项目之后，正在考虑如何自动备份MySql数据库的问题，我在网上找了一下资料终于解决了，特此记录一下。
 
