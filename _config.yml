@@ -49,5 +49,8 @@ links:
   - title: About Me
     url: /about
 
+# enable ssl
+enforce_ssl: "haoxilu.net"
+
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
