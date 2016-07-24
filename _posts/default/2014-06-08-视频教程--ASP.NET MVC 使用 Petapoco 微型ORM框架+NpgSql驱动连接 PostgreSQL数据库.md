@@ -7,7 +7,7 @@ header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
 description: ''
-main-class: 'dev'
+main-class: 'dotNet'
 color: '#2DA0C3'
 introduction: ''
 ---

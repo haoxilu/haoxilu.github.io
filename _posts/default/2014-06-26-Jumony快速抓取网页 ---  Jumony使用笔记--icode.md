@@ -7,7 +7,7 @@ header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
 description: ''
-main-class: 'dev'
+main-class: 'dotNet'
 color: '#2DA0C3'
 introduction: ''
 ---
@@ -56,7 +56,7 @@ introduction: ''
     2 var htmlSource =
     3 new JumonyParser().LoadDocument(html);
     4 HtmlText = htmlSource.Find(".postTitle2").FirstOrDefault().InnerText();
-    5 
+    5
     6 Html = htmlSource.Find("#cnblogs_post_body").FirstOrDefault().InnerHtml();效果图：
 
  ![](http://images.cnitblog.com/i/578906/201406/262009158312381.png)
