@@ -1,5 +1,5 @@
 themes = {
-    post-Linux: #B31917,
+    post-linux: #B31917,
     post-ruby: #2DA0C3,
     post-js: #D6BA32,
     post-html: #EB7728,
@@ -44,15 +44,15 @@ for theme, category-color in themes
         .share a
             &:hover svg
                 fill category-color
-                
+
         body
-            &.search-overlay 
+            &.search-overlay
                 &:after
                     +below(cut)
                         background-color category-color
         .icon-menu
             fill category-color
-            
+
         .box-body
             h2
                 color category-color

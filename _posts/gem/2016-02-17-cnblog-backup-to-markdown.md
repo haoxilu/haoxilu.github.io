@@ -6,6 +6,10 @@ author:     "Richard Hao"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - gem开发
+description: ''
+main-class: 'misc'
+color: '#2DA0C3'
+introduction: '导出博客园文章至Markdown'
 ---
 ## Summary
 [![Build Status](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown.svg?branch=master)](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown)

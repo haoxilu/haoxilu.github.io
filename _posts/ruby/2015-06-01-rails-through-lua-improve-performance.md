@@ -6,9 +6,13 @@ author:     "Richard Hao"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - ruby
+description: ''
+main-class: 'ruby'
+color: '#2DA0C3'
+introduction: '使用Ruby批量查询Redis数据'
 ---
 
-> 基于Ruby的`reids-rb` gem包 
+> 基于Ruby的`reids-rb` gem包
 
 首先，我简单介绍一下，本文中案例的基本场景，即，在一个博客系统中，将所有的评论存储或缓存到Redis中，当我们需要分页取出评论的过程。
 
@@ -26,7 +30,7 @@ gem 'redis'
 ```
 
 2. `redis_client.rb`
- 
+
 ```ruby
 require 'redis'
 
