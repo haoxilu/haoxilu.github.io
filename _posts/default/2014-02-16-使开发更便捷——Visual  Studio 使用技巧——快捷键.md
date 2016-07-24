@@ -6,6 +6,10 @@ author:     "郝喜路"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
+description: ''
+main-class: 'dotNet'
+color: '#2DA0C3'
+introduction: ''
 ---
 下面是.Net开发中常用的快捷键，熟练使用可以提高开发效率：
 

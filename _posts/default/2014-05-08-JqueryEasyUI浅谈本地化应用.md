@@ -6,6 +6,10 @@ author:     "郝喜路"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - 默认
+description: ''
+main-class: 'js'
+color: '#2DA0C3'
+introduction: ''
 ---
  **JqueryEasyUI**** 浅谈本地化应用**
 
@@ -14,15 +18,15 @@ Jquery是对javascript一种封装，使我们开发人员使用起来更加方�
 下面先简单介绍一线JqueryEasyUI的使用，在用JqueryEasyUI之前需要引用几个js和css文件
 
     1. <link href="../jqeryEasyUi/jquery-easyui-1.3.1/themes/default/easyui.css" rel="stylesheet"
-    
+
     2. type="text/css" />
-    
+
     3. <link href="../jqeryEasyUi/jquery-easyui-1.3.1/themes/icon.css" rel="stylesheet"
-    
+
     4. type="text/css" />
-    
+
     5. <script src="../jqeryEasyUi/jquery-easyui-1.3.1/jquery-1.8.0.min.js" type="text/javascript"></script>
-    
+
     6. <script src="../jqeryEasyUi/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
 
 这几个文件在相应的JqueryEasyUI包中存在。（下载地址： [http://www.jeasyui.com/download/v123.php）简单介绍一下几个JqueryEasyUI的例子。这些demo](http://www.jeasyui.com/download/v123.php）简单介绍一下几个JqueryEasyUI的例子。这些demo)其实都可以在 [![clip_image002](http://images.cnitblog.com/blog/578906/201405/081015199791065.jpg "clip\_image002")](http://images.cnitblog.com/blog/578906/201405/081015186352321.jpg)找到。
@@ -36,73 +40,73 @@ Jquery是对javascript一种封装，使我们开发人员使用起来更加方�
 Script代码：
 
     1. $(function () {
-    
+
     2. $('#d2').dialog('close');
-    
+
     3. });
-    
+
     4. function open1() {
-    
+
     5. $('#d2').dialog('open');
-    
+
     6. }
 
 窗口处代码（其实就是使用了div）：
 
     1. <div id="d2" class="easyui-dialog" title="处?|理¤¨a派¨|工?è信?息?é" style="width: 400px; height: 200px;
-    
+
     2. left: 100px; top: 150px; padding: 10px" data-options="toolbar:'#dlg-toolbar',buttons:'#dlg-buttons',resizable:true">
-    
+
     3. <table width="100%" border="0" cellpadding="4" cellspacing="1" class="show-table">
-    
+
     4. <tr>
-    
+
     5. <td>
-    
+
     6. 维?修T人¨?员?à：êo
-    
+
     7. </td>
-    
+
     8. <td>
-    
+
     9. <asp:DropDownList ID="ddlMan" runat="server">
-    
+
     10. </asp:DropDownList>
-    
+
     11. </td>
-    
+
     12. </tr>
-    
+
     13. <tr>
-    
+
     14. <td>
-    
+
     15. 维?修T负o责e人¨?：êo
-    
+
     16. </td>
-    
+
     17. <td>
-    
+
     18. <asp:DropDownList ID="ddlHeadMan" runat="server">
-    
+
     19. </asp:DropDownList>
-    
+
     20. </td>
-    
+
     21. </tr>
-    
+
     22. </table>
-    
+
     23. </div>
-    
+
     24. <div id="dlg-buttons">
-    
+
     25. <a href="#" class="easyui-linkbutton" onclick="allot()">分¤?配?</a>
-    
+
     26. <a href="#" class="easyui-linkbutton" onclick="javascript:$('#d2').dialog('close')">
-    
+
     27. 取¨?消?</a>
-    
+
     28. </div>
 
 总结：对于dialog的使用，最好的方式就是看下载包内的demo，其他的方式也是看demo。
@@ -124,17 +128,17 @@ Script代码：
 Js和css引用代码：
 
     1. <link href="../jqeryEasyUi/jquery-easyui-1.3.1/themes/default/easyui.css" rel="stylesheet"
-    
+
     2. type="text/css" />
-    
+
     3. <link href="../jqeryEasyUi/jquery-easyui-1.3.1/themes/icon.css" rel="stylesheet"
-    
+
     4. type="text/css" />
-    
+
     5. <script src="../jqeryEasyUi/jquery-easyui-1.3.1/jquery-1.8.0.min.js" type="text/javascript"></script>
-    
+
     6. <script src="../jqeryEasyUi/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
-    
+
     7. <script src="../jqeryEasyUi/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
 
 Div显示日历的代码：
