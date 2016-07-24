@@ -5,13 +5,24 @@ url: "http://haoxilu.net" # the base hostname & protocol for your site e.g. http
 
 # User settings
 username: Richard Hao
-user_description: Ruby engineer
+user_description: Ruby Engineer
 user_title: 爱生活，更爱编程！
 email: mail@haoxilu.net
-twitter_username: haoxilu
-github_username:  haoxilu
-gplus_username:  haoxilu
-disqus_username: haoxilu
+
+# 备案号
+casenumber: 京ICP备15036713号
+
+# Google Analytics
+ga_track_id: 'UA-70611530-1'            # Format: UA-xxxxxx-xx
+ga_domain: haoxilu.net
+
+disqus_username:   haoxilu123
+
+RSS: true
+weibo_username:    haoxilu
+github_username:   haoxilu
+twitter_username:  haoxilu
+facebook_username: haoxilu
 
 # Build settings
 markdown: kramdown

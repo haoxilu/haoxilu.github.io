@@ -1,13 +1,13 @@
 ---
 layout: default
-main-class: 'svg'
+main-class: 'linux'
 ---
 
 <main class="home" id="scroll" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    <h1 class="title-category">svg</h1>
+    <h1 class="title-category">Linux</h1>
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
-        {% if post.main-class == 'svg' %}
+        {% if post.main-class == 'linux' %}
             <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon"><span>{{post.main-class}}</span></span>
                     <div class="box-body">
@@ -25,7 +25,7 @@ main-class: 'svg'
                         </a>
                         <div class="tags">
                             {% for tag in post.tags %}
-                                <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
+              <a href="linux.html" id="" title="jekyll">linux</a>                  <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
                             {% endfor %}
                         </div>
                     </div>
