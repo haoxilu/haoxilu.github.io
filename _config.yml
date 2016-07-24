@@ -16,8 +16,9 @@ casenumber: 京ICP备15036713号
 ga_track_id: 'UA-70611530-1'            # Format: UA-xxxxxx-xx
 ga_domain: haoxilu.net
 
-gplus_username:    haoxilu
-disqus_username:   haoxilu
+disqus_username:   haoxilu123
+
+RSS: true
 weibo_username:    haoxilu
 github_username:   haoxilu
 twitter_username:  haoxilu
