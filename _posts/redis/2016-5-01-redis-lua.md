@@ -6,6 +6,10 @@ author:     "Richard Hao"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - redis
+description: ''
+main-class: 'dev'
+color: '#2DA0C3'
+introduction: 'Redis 提高Lua性能'
 ---
 
 > Redis在2.6版引入了对Lua的支持。

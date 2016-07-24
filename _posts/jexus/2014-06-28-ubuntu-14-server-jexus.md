@@ -6,6 +6,10 @@ author: "Richard Hao"
 header-img: "//static.haoxilu.net/post-bg.jpg"
 tags:
     - jexus
+description: ''
+main-class: 'linux'
+color: '#2DA0C3'
+introduction: 'jexus是一款国人开发的，基于Liunx的.Net跨平台开发工具'
 ---
 * * *
 
@@ -76,8 +80,8 @@ tar -jxvf libgdiplus-2.10.tar.bz2
 
 2&gt;进入libgdiplus-2.10 文件夹 执行命令
 
-./configure --prefix=/usr    
-make     
+./configure --prefix=/usr
+make
 sudo make install
 
 注：在执行编译&nbsp; make 时遇到了错误，
@@ -128,8 +132,8 @@ make: *** [all] Error 2
 
 2&gt;cd mono-3.4.0&nbsp; 进入 mono-3.4.0文件夹执行编译安装操作
 
-./configure --prefix=/usr    
-&nbsp; make     
+./configure --prefix=/usr
+&nbsp; make
 &nbsp; sudo make install
 
 注：
@@ -140,7 +144,7 @@ make: *** [all] Error 2
 
 解决方法： sudo apt-get install gettext
 
-然后继续执行&nbsp; ./configure --prefix=/usr    
+然后继续执行&nbsp; ./configure --prefix=/usr
 3&gt;可以通过 mono -V 查看当前的版本 来判断mono是否安装成功，成功显示下图
 
 [![wps_clip_image-7057](http://images.cnitblog.com/blog/578906/201406/282242544144181.png "wps_clip_image-7057")](http://images.cnitblog.com/blog/578906/201406/282242537268038.png)
@@ -201,20 +205,20 @@ sudo vi /etc/rc.local
 
 10、 Jexus 的各种使用方法详见[http://www.linuxdot.net/bbsfile-3500](http://www.linuxdot.net/bbsfile-3500)
 
-启动：sudo /usr/jexus/jws start    
-停止：sudo /usr/jexus/jws stop     
-重启：sudo /usr/jexus/jws restart     
-重启指定网站：sudo /usr/jexus/jws restart siteName     
+启动：sudo /usr/jexus/jws start
+停止：sudo /usr/jexus/jws stop
+重启：sudo /usr/jexus/jws restart
+重启指定网站：sudo /usr/jexus/jws restart siteName
 停止指定网站：sudo /usr/jexus/jws stop siteName
 
 Jexus升级，最新版本 关注 [www.jexus.org](http://www.jexus.org)
 
-cd /tmp    
-sudo /usr/jexus/jws stop     
-sudo rm jexus-5.5*     
-wget http://www.linuxdot.net/down/jexus-5.5.1.tar.gz     
-tar -zxvf jexus-5.5.1.tar.gz     
-cd jexus-5.5.1     
+cd /tmp
+sudo /usr/jexus/jws stop
+sudo rm jexus-5.5*
+wget http://www.linuxdot.net/down/jexus-5.5.1.tar.gz
+tar -zxvf jexus-5.5.1.tar.gz
+cd jexus-5.5.1
 sudo ./upgrade
 
 11、 配置Asp.Net Mvc4 测试网站
