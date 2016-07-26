@@ -53,8 +53,5 @@ links:
 # enable ssl
 enforce_ssl: "haoxilu.net"
 
-# 404
-permalink: /404.html
-
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
