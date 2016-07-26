@@ -1,5 +1,5 @@
 # Site settings
-title: 爱生活，更爱编程！--郝喜路
+title: 爱编程，更爱生活！--郝喜路
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://haoxilu.net" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
@@ -7,7 +7,7 @@ url: "http://haoxilu.net" # the base hostname & protocol for your site e.g. http
 # User settings
 username: Richard Hao
 user_description: Ruby Engineer
-user_title: 爱生活，更爱编程！
+user_title: 爱编程，更爱生活！
 email: mail@haoxilu.net
 
 # 备案号
