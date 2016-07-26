@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>404</title>
+    <script type="text/javascript">
+        var host = "{{ site.enforce_ssl }}";
+        if ((host == window.location.host) && (window.location.protocol != "http:"))
+            window.location.protocol = "http";
+    </script>
 </head>
 <body>
     <div>
-        <script type="text/javascript" src="//static.haoxilu.net/search_children.js" charset="utf-8" homePageUrl="/" homePageName="回到我的主页"></script>
+        <script type="text/javascript" src="//www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="/" homePageName="回到我的主页"></script>
     </div>
 </body>
 </html>
