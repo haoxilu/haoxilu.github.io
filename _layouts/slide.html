@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+    <title>{{ page.title }} -- {{ site.title }}</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="//cdn.bootcss.com/reveal.js/3.3.0/css/reveal.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/reveal.js/3.3.0/css/theme/black.min.css" rel="stylesheet" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link href="//cdn.bootcss.com/reveal.js/3.3.0/lib/css/zenburn.min.css" rel="stylesheet">
+
+		<link href="//cdn.bootcss.com/reveal.js/3.3.0/css/print/paper.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+        <section data-markdown="{{ page.slide }}"
+                 data-separator="^\n\n\n"
+                 data-vertical="^\n\n">
+        </section>
+
+			</div>
+
+		</div>
+
+    <script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/head.min.js"></script>
+    <script src="//cdn.bootcss.com/reveal.js/3.3.0/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/lib/js/classList.min.js', condition: function() { return !document.body.classList; } },
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/marked.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/markdown.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/zoom-js/zoom.min.js', async: true },
+					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/notes/notes.min.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
